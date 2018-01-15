@@ -1,0 +1,137 @@
+.features {
+  padding: 95px 0 170px 0;
+  position: relative;
+  background: #e7eff1;
+  z-index: 0;
+  &::before {
+    content: "";
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: $white;
+    box-shadow: 0 0 65px #d6e4e7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1;
+  }
+  &::after {
+    content: "";
+    width: 47px;
+    height: 52px;
+    background: url("../../img/logo-icon.png") no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1;
+  }
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 33px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .features-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  li {
+    max-width: 380px;
+    margin-top: 60px;
+    position: relative;
+    &:nth-child(odd){
+      padding-right: 60px;
+
+      h2, p {
+        text-align: right;
+      }
+    }
+    &:nth-child(even){
+      padding-left: 60px;
+
+      h2, p {
+        text-align: left;
+      }
+    }
+
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 33px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-family: 'Domine', sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 28px;
+      color: $color-graphite-darken;
+    }
+  }
+  .support::after {
+    content: "";
+    width: 31px;
+    height: 38px;
+    background: url("../../img/icon-support.png") no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .business::after {
+    content: "";
+    width: 32px;
+    height: 30px;
+    background: url("../../img/icon-business-b.png") no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .security::after {
+    content: "";
+    width: 36px;
+    height: 40px;
+    background: url("../../img/icon-security.png") no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .process::after {
+    content: "";
+    width: 31px;
+    height: 35px;
+    background: url("../../img/icon-process.png") no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .boost-business {
+    max-width: 1140px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background: #565d5d;
+    position: absolute;
+    bottom: 0;
+
+    p {
+      font-family: 'Domine', sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      color: $white;
+    }
+  }
+}

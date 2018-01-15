@@ -1,0 +1,127 @@
+.main-welcome-section {
+  height: 100vh;
+  background-color: #000000;
+  position: relative;
+  z-index: 0;
+  &::before {
+    content: "";
+    background: url("../../img/bg-2.png"), linear-gradient(-49deg, rgba(255, 172, 86, 0.43) 0%, rgba(3, 182, 231, 0.43) 100%), no-repeat center center;
+    background-size: 100% 100%;
+    opacity: 0.35;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+  .category-name {
+    margin-top: 130px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    h2 {
+      align-self: center;
+      font: 700 48px "Montserrat", sans-serif;
+      color: $white;
+      text-transform: uppercase;
+
+    }
+    p {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: $white;
+      align-self: center;
+      margin-bottom: 10px;
+    }
+  }
+
+  .flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+  }
+
+  .industry-category {
+    max-width: 260px;
+    width: 100%;
+    min-height: 280px;
+    background: $dark-blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    &:hover {
+      background: #f6961b;
+      cursor: pointer;
+    }
+
+    p {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 30px;
+      text-transform: uppercase;
+      color: $white;
+      position: relative;
+      padding-top: 70px;
+      &.education-industry {
+        &::before {
+          content: "" ;
+          width: 60px;
+          height: 60px;
+          background: url("../../img/icon-education.png") no-repeat;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          margin: auto;
+        }
+      }
+      &.business-industry {
+        &::before {
+          content: "";
+          width: 60px;
+          height: 60px;
+          background: url("../../img/icon-business.png") no-repeat;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          margin: auto;
+        }
+      }
+      &.technology-industry {
+        &::before {
+          content: "";
+          width: 70px;
+          height: 50px;
+          background: url("../../img/icon-technology.png") no-repeat;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          margin: auto;
+        }
+      }
+      &.banking-industry {
+        &::before {
+          content: "";
+          width: 55px;
+          height: 60px;
+          background: url("../../img/icon-banking.png") no-repeat;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          margin: auto;
+        }
+      }
+    }
+  }
+}

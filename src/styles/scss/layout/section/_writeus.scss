@@ -1,0 +1,52 @@
+.write-us {
+  padding: 95px 0;
+  background: #e7eff1;
+
+  h2 {
+    font-family: 'Montserrat',sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 55px;
+  }
+  input, select {
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #cddbde;
+    padding: 5px 0;
+    max-width: 550px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  textarea {
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #cddbde;
+    padding: 5px 0;
+    resize: none;
+    max-width: 100%;
+    width: 100%;
+    min-height: 180px;
+    margin-bottom: 40px;
+  }
+
+  ::-webkit-input-placeholder, option {
+    text-transform: uppercase;
+    color: #343a3b;
+    font-family: 'Montserrat' , sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  .btn-middle {
+    display: block;
+    margin:  0 auto;
+  }
+
+}

@@ -1,0 +1,47 @@
+.industry {
+  padding: 95px 0;
+
+  h2 {
+    font-family: 'Montserrat',sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+  .indusrty-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    li {
+      display: flex;
+      align-items: center;
+      max-width: 550px;
+      box-shadow: 0 0 27px #e5eced;
+      border: 1px solid #e4ecee;
+      margin-bottom: 30px;
+      .descript-industry {
+        padding: 0 30px;
+
+        h3 {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 32px;
+          text-transform: uppercase;
+          margin-bottom: 15px;
+        }
+        p {
+          font-family: 'Domine', sans-serif;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 28px;
+          color: $color-graphite-darken;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.about-us {
+  padding: 95px 0;
+
+  .inform-list {
+    li {
+      max-width: 630px;
+      margin-bottom: 70px;
+      &:last-child {
+        margin: 0;
+      }
+    }
+    h2 {
+      font: 700 32px/32px 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      color: #000;
+      margin-bottom: 25px;
+    }
+    p {
+      font:  400 15px/28px 'Domine', sans-serif;
+      color: $color-graphite-darken;
+    }
+  }
+
+  .video-imitation {
+      position: relative;
+    margin-bottom: 30px;
+  }
+  .consultation-field {
+    padding: 45px 35px;
+    background: $dark-blue;
+    max-width: calc(458px - 70px);
+
+    h2 {
+      font:  700 24px/30px 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      color: $white;
+      margin-bottom: 25px;
+    }
+    input {
+      background: transparent;
+      outline: none;
+      max-width: 180px;
+      width: 100%;
+      border: none;
+      padding: 10px 0 10px 0;
+      border-bottom: 1px solid $color-border-consult;
+      margin-bottom: 25px;
+    }
+    textarea {
+      background: transparent;
+      outline: none;
+      max-width: 100%;
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid $color-border-consult;
+      min-height: 60px;
+      resize: none;
+      overflow: hidden;
+      margin-bottom: 30px;
+    }
+
+    ::-webkit-input-placeholder {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 30px;
+      text-transform: uppercase;
+      color: $color-placeholder-consult;
+    }
+
+    .name {
+      margin-right: 20px;
+    }
+  }
+}

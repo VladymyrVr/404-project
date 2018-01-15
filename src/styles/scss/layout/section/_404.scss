@@ -1,0 +1,52 @@
+.not-found-section {
+
+  .flex-wrapper {
+    padding: 95px 0;
+  }
+  .error {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 240px;
+    line-height: 33px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $light-blue;
+  }
+
+  .page-not-found {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 1px;
+      background: $color-graphite-dark;
+      left: -25%;
+    }
+
+    h2 {
+      font-family: 'Montserrat', serif;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 32px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+
+      &::before {
+        padding-bottom: 20px;
+        content: "";
+        display: block;
+        background: url("../../img/icon-sad.png") no-repeat;
+        width: 76px;
+        height: 76px;
+      }
+    }
+
+    p {
+      font-family: 'Domine', sans-serif;
+      font-size: 20px;
+      line-height: 32px;
+      color: $color-graphite-darken;
+      margin-bottom: 60px;
+    }
+  }
+}

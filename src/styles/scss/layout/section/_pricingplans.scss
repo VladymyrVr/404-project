@@ -1,0 +1,88 @@
+.pricing-plans {
+  padding: 95px 0;
+
+  h2 {
+    font-family: 'Montserrat',  sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+
+  .plan-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    &>li {
+      max-width: 360px;
+      width: 100%;
+      border: 1px solid #e1e9eb;
+      padding-bottom: 60px;
+    }
+    .category-plan {
+      max-width: 315px;
+      padding: 30px 0 30px 45px;
+      margin-bottom: 50px;
+
+      p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 21px;
+        text-transform: uppercase;
+        color: $white;
+
+        .price-plan {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 36px;
+          font-weight: 400;
+          line-height: 21px;
+          text-transform: uppercase;
+          color: $white;
+        }
+        &.plan-name {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 21px;
+          text-transform: uppercase;
+          color: #fae0c5;
+        }
+      }
+    }
+    .basic-plan {
+      background: $color-active-link;
+    }
+
+    .silver-plan {
+      background: $dark-blue;
+    }
+    .gold-plan {
+      background: $gold-plan-color;
+    }
+
+    .detail-info-plan {
+      padding-left: 40px;
+
+      .include-price {
+        min-height: 180px;
+        margin-bottom: 10px;
+      }
+      p {
+        font-family: 'Domine', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 36px;
+        color: $color-graphite-darken;
+        &::before {
+          content: "\f00c";
+          font-family: 'FontAwesome', sans-serif;
+          color: $color-active-link;
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+}

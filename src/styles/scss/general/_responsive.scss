@@ -1,0 +1,92 @@
+@media screen and (max-width: 1200px){
+  .wrapper {
+    max-width: 1000px;
+  }
+
+
+  .pricing-plans {
+
+    h2 {
+      text-align: center;
+    }
+
+    .plan-list {
+      justify-content: space-around;
+
+      li {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  header {
+    .contact-info {
+      display: none;
+    }
+  }
+
+
+  .navbar-toggle {
+    display: block;
+  }
+
+
+  .footer-top {
+    justify-content: space-around;
+
+    .logo {
+      display: none;
+    }
+  }
+  .quick-contact{
+    .contact-list {
+      li {
+        max-width: 500px;
+        margin: 25px auto 0 auto;
+        align-items: center;
+        padding: 0;
+        }
+    }
+  }
+  .projects {
+    .flex-wrapper {
+      justify-content: center;
+    }
+
+    .project-block-middle {
+      margin-bottom: 25px;
+    }
+  }
+
+  .features {
+    .boost-business {
+      max-width: 950px;
+    }
+
+    &::after {
+      background: none;
+    }
+    &::before {
+      content: '';
+      box-shadow: none;
+      background: transparent;
+    }
+  }
+
+  .main-welcome-section {
+    .industry-category {
+      max-width: 200px;
+      min-height: 250px;
+    }
+  }
+
+  .main-welcome-section .category-name h2 {
+    font-size: 38px;
+  }
+
+
+}

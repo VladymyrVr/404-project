@@ -1,0 +1,38 @@
+.wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 10px;
+  height: auto;
+}
+
+.flex-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.img-wrapper {
+  max-width: 359px;
+  max-height: 172px;
+  overflow: hidden;
+}
+
+.img-wrapper-middle {
+  max-width: 358px;
+}
+
+.img-wrapper-large {
+  max-width: 749px;
+  height: 294px;
+  overflow: hidden;
+}
+
+.img-wrapper-small-circle {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}

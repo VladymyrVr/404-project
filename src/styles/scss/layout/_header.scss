@@ -1,0 +1,50 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+  margin-bottom: 5px;
+
+  .nav-list {
+    li {
+      display: inline-block;
+      padding-left: 35px;
+      &:first-child {
+        padding: 0;
+      }
+
+      a {
+        font: 400 14px/30px, "Montserrat", sans-serif;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $color-graphite;
+        &:hover {
+          color: $color-active-link;
+        }
+      }
+    }
+  }
+  .phone {
+    color: $white;
+    font: 400 15px/36px, "Montserrat", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .75px;
+    margin-right: 10px;
+
+    &::before {
+      position: relative;
+      content: "\f095";
+      font-family: "FontAwesome", sans-serif;
+      color: $dark-blue;
+      padding: 5px 10px 0 0;
+      top: 50%;
+      transform: translateY(-50%);
+
+    }
+  }
+
+  .contact-info {
+    display: flex;
+    align-items: center;
+  }
+}

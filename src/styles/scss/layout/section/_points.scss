@@ -1,0 +1,32 @@
+.points-section {
+  padding: 95px 0;
+  background: $bg-point-section;
+
+  .points-list {
+    display: flex;
+    justify-content: space-between;
+    li {
+      box-shadow: 0 0 40px #d7e2e5;
+      max-width: 358px;
+      background: $white;
+      width: 100%;
+      padding: 0 0 45px 0;
+      text-align: center;
+
+      .img-wrapper {
+        margin-bottom: 40px;
+      }
+
+      h3 {
+        font: 700 24px/32px 'Montserrat',sans-serif;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+      p {
+        margin: 0 40px 40px 40px;
+        font: 400 15px/28px 'Domine', sans-serif;
+        color: $color-graphite-darken;
+      }
+    }
+  }
+}

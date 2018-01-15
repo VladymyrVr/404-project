@@ -1,0 +1,32 @@
+.welcome-section {
+  min-height: 400px;
+  background-color: #000000;
+  position: relative;
+  z-index: 0;
+  &::before {
+    content: "";
+    background: url("../../img/404_2.png"), linear-gradient(-49deg, rgba(255, 172, 86, 0.43) 0%, rgba(3, 182, 231, 0.43) 100%), no-repeat center center;
+    background-size: 100% 100%  ;
+    opacity: 0.35;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .category-name {
+    display: flex;
+    height: calc(433px - 75px);
+    justify-content: center;
+
+    h2 {
+      align-self: center;
+      font: 700 48px "Montserrat", sans-serif;
+      color: $white;
+      text-transform: uppercase;
+
+    }
+  }
+}

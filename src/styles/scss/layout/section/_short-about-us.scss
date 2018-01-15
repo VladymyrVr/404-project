@@ -1,0 +1,40 @@
+.short-about-us {
+  padding: 95px 0;
+  h2 {
+    font-family: 'Montserrat',sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 33px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  p {
+    max-width: 700px;
+    font-family: 'Domine', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    margin: 0 auto 30px auto;
+    color: $color-graphite-darken;
+  }
+  .btn-middle {
+    display: block;
+    margin: 0 auto 60px auto;
+  }
+  .short-info {
+    border-bottom: 1px solid $color-graphite-dark;
+  }
+  .slider {
+    margin: 40px auto 0 auto;
+    max-width: 100%;
+    width: 90%;
+  }
+  .slick-prev {
+    left: -50px;
+  }
+  .slick-next {
+    right: -50px;
+  }
+}

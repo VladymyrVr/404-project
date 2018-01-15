@@ -1,0 +1,59 @@
+
+::-webkit-input-placeholder {
+  text-indent: 0px;
+  transition: text-indent 0.5s ease;
+}
+:focus::-webkit-input-placeholder {
+  text-indent: 600px;
+  transition: text-indent 0.5s ease;
+}
+
+textarea:focus::-webkit-input-placeholder {
+  text-indent: -400px;
+  transition: text-indent 0.5s ease;
+}
+
+.active {
+  color: $color-active-link!important;
+}
+.slick-prev, .slick-next {
+  height: 31px;
+  border: 1px solid $color-graphite-darken;
+  border-radius: 50%;
+  width: 31px;
+
+  &:hover {
+    border: 1px solid #83b6e7;
+
+    &::before {
+      color: #83b6e7;
+    }
+  }
+}
+.slick-next {
+  right: 30px;
+
+  &::before {
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $color-graphite-darken;
+  }
+}
+.slick-prev {
+  left: -45px;
+  &::before {
+    right: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $color-graphite-darken;
+  }
+}
+.slick-slide {
+  opacity: .4;
+}
+.slick-current {
+  opacity: 1;
+}
