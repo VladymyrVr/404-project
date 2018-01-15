@@ -9,21 +9,20 @@ $( document ).ready(function() {
         infinite: true,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1100,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 1,
                     infinite: true,
-                    arrows: false
+                    arrows: true
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 680,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 2,
-                    arrows: false,
-                    dots: true
+                    slidesToScroll: 1,
+                    arrows: true,
                 }
             },
             {
